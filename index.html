@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="./css/aos.css">
 
 
+  <script src="./script/particles.min.js"></script>
 
 
   <link rel="stylesheet" href="./css/main.css">
@@ -262,6 +263,12 @@
   </footer>
 
 
+  <script wfd-invisible="true">
+    particlesJS.load('particles-js', './source/external/particles.json', function ()
+    {
+      console.log("particles.json loaded...")
+    })
+  </script>
 
   <!-- AOS Animations -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" wfd-invisible="true"></script>
