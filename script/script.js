@@ -11,16 +11,16 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 console.log(check)
 
 window.onscroll = function () {
-    console.log(window.screen.availHeight / 100 * 5)
+    console.log(window.screen.availHeight / 100 * 3)
     if (check == false) {
-        if (window.scrollY < ((window.screen.availHeight / 100) * 5)) {
+        if (window.scrollY < ((window.screen.availHeight / 100) * 2)) {
             document.getElementById("hide_on_scroll").style.top = "93vh";
         } else {
             document.getElementById("hide_on_scroll").style.top = "-50px";
         }
     }
     if (check == true) {
-        if (window.scrollY < ((window.screen.availHeight / 100) * 5)) {
+        if (window.scrollY < ((window.screen.availHeight / 100) * 1)) {
             document.getElementById("hide_on_scroll").style.top = "83vh";
         } else {
             document.getElementById("hide_on_scroll").style.top = "-50px";
