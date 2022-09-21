@@ -874,12 +874,14 @@ header .seperator-skew svg .fill-white {
 
 .education {
   background: white;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
 }
-
-.education .container {
+.education .container{
+  padding: 3rem 0;
+  padding-bottom: 0rem;
   max-width: 900px;
 }
+
 
 .education .container h2 {
   text-align: center;
@@ -891,9 +893,10 @@ header .seperator-skew svg .fill-white {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  box-shadow: 0 0.15rem 1rem rgba(43, 52, 56, 0.15);
   padding: 40px;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin: 1rem;
 }
 
 .education .container .education-card > *:last-child {
@@ -956,9 +959,7 @@ header .seperator-skew svg .fill-white {
   padding: 4rem 0;
 }
 
-.education .container{
-  padding: 4rem 0;
-}
+
 
 .skills .skills-icons {
   list-style-type: none;
@@ -1048,7 +1049,11 @@ header .seperator-skew svg .fill-white {
 
 .contact {
   background: white;
-  padding: 3rem 0;
+  padding: 0rem 0;
+}
+
+.contact_me_container{
+  padding-top: 3rem;
 }
 
 .contact .section-title {
@@ -1221,7 +1226,7 @@ header .seperator-skew svg .fill-white {
   }
 
   .skills .container {
-    padding: 1rem 0;
+    padding: 3rem 0;
   }
 }
 

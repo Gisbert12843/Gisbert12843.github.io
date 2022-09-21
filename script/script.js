@@ -15,7 +15,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 if (check == false) {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', 'assets/particles.json', function () {
+    particlesJS.load('particles-js', './source/external/particles.json', function () {
         console.log('callback - particles.js config loaded');
     });
 }   
