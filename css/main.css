@@ -875,11 +875,13 @@ header .seperator-skew svg .fill-white {
 .education {
   background: white;
   padding-bottom: 0rem;
+  overflow-y: hidden;
 }
 .education .container{
   padding: 3rem 0;
   padding-bottom: 0rem;
   max-width: 900px;
+  overflow-y: hidden;
 }
 
 
@@ -897,6 +899,7 @@ header .seperator-skew svg .fill-white {
   padding: 40px;
   border-radius: 5px;
   margin: 1rem;
+  overflow-y: hidden;
 }
 
 .education .container .education-card > *:last-child {
@@ -1050,10 +1053,14 @@ header .seperator-skew svg .fill-white {
 .contact {
   background: white;
   padding: 0rem 0;
+  margin-top: -0.1rem;
+  
 }
 
 .contact_me_container{
   padding-top: 3rem;
+  overflow-y: hidden;
+  
 }
 
 .contact .section-title {

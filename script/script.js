@@ -18,7 +18,7 @@ if (check == false) {
     particlesJS.load('particles-js', './source/external/particles.json', function () {
         console.log('callback - particles.js config loaded');
     });
-}   
+}       
 
 window.onscroll = function () {
     console.log(window.screen.availHeight / 100 * 3)
