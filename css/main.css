@@ -698,6 +698,7 @@ header .seperator-skew {
   height: 80px;
   width: 100%;
   overflow: hidden;
+  margin-bottom: -0.1vh;
 }
 
 header .seperator-skew svg {
@@ -1053,7 +1054,7 @@ header .seperator-skew svg .fill-white {
 .contact {
   background: white;
   padding: 0rem 0;
-  margin-top: -0.1rem;
+  margin-top: -0.1vh;
   
 }
 
