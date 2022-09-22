@@ -235,8 +235,7 @@ a {
   background: none;
   outline: none;
   color: var(--text);
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
+
 }
 
 .btn-email .plane,
@@ -539,8 +538,6 @@ header nav .mobile-menu .container .mobile-menu-links ul .link:hover::after {
 
 }
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
