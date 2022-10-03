@@ -29,16 +29,16 @@ window.onscroll = function () {
     console.log(window.screen.availHeight / 100 * 3)
     if (check == false) {
         if (window.scrollY < ((window.screen.availHeight / 100) * 2)) {
-            document.getElementById("hide_on_scroll").style.top = "initial";
+            document.getElementById("hide_on_scroll").style.top = "inherit";
         } else {
-            document.getElementById("hide_on_scroll").style.top = "-50px";
+            document.getElementById("hide_on_scroll").style.top = "-120%";
         }
     }
     if (check == true) {
         if (window.scrollY < ((window.screen.availHeight / 100) * 1)) {
-            document.getElementById("hide_on_scroll").style.top = "initial";
+            document.getElementById("hide_on_scroll").style.top = "0";
         } else {
-            document.getElementById("hide_on_scroll").style.top = "-50px";
+            document.getElementById("hide_on_scroll").style.top = "-120%";
         }
     }
 }

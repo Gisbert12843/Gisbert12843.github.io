@@ -1055,32 +1055,29 @@ header .seperator-skew svg .fill-white {
   transform: translate(-50%, -40%);
   font-weight: 400;
   letter-spacing: 8px;
-  text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px var(--my_theme_color), 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px var(--my_theme_color);
-}
-.flicker-veryslow{
-  animation: flicker 4s linear infinite;
-}
-.flicker-slow{
-  animation: flicker 3s linear infinite;
-}
-.flicker-medium{
-  animation: flicker 2s linear infinite;
-}
-.flicker-fast{
-  animation: flicker 1s linear infinite;
+  animation: shadow 4s linear 0s infinite alternate;
+  animation-fill-mode: forwards;
+
 }
 
+@keyframes shadow {
+  0% {
+    text-shadow: -4px -5px 8px var(--my_theme_color);
+    animation-timing-function: ease-in;
 
-@keyframes flicker {
-	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    opacity: .99;
-		
-	}
-	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-		opacity: 0.4;
-	}
+  }
+  50% {
+    text-shadow: -5px 0px 8px var(--my_theme_color);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    text-shadow: -4px 5px 8px var(--my_theme_color);
+    animation-timing-function: ease-in;
+
+  }
+
 }
-
 
 
 
@@ -1122,7 +1119,6 @@ header .seperator-skew svg .fill-white {
   }
 
   #nav{
-    overflow: hidden;
     height: 20vh;
     height: calc(var(--vh, 1vh) * 20);
 
@@ -1209,20 +1205,29 @@ header .seperator-skew svg .fill-white {
 
 
 
-
-  .arrow-container {
-    height: 100%;
+  #hide_on_scroll {
+    padding-top: 0vh;
+    padding-top: calc(var(--vh, 1vh) * 0);
+  }
+  .arrow-container
+  {
+    top: 0;
+    height: 7vh;
     justify-self: center;
-    width: 50px;
+    width: 18%;
     margin: 0 auto;
     margin-bottom: 0px;
     bottom: 0px;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .arrow {
     text-align: center;
-    padding-top: 40%;
+    padding-top: 0%;
+    width: 80%;
   }
   .bounce {
     animation: bounce 2s infinite;
@@ -1242,11 +1247,10 @@ header .seperator-skew svg .fill-white {
       transform: translateY(-20%);
     }
   }
-  #hide_on_scroll {
-    padding-top: 0vh;
-    padding-top: calc(var(--vh, 1vh) * 0);
+  .fa-2x{
+    font-size: 4vh;
+    font-size: calc(var(--vh, 1vh) * 4);
   }
-
 
   
 
@@ -1267,7 +1271,6 @@ header .seperator-skew svg .fill-white {
     padding-right: 2%;
   }
 
- 
 
   .project_font {
     margin-bottom: 0;
