@@ -851,6 +851,7 @@ header .seperator-skew svg .fill-white {
   padding: 0rem 0;
   position: relative;
   overflow: hidden;
+  transform: translateY(1px);
 }
 
 .skills h2 {
