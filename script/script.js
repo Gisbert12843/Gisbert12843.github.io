@@ -1,3 +1,7 @@
+
+///////////////////////////////////////////////////////////
+
+
 window.mobileCheck = function () {
     let check = false;
     (function (a) {
@@ -5,6 +9,7 @@ window.mobileCheck = function () {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
 };
+
 
 
 
@@ -24,14 +29,14 @@ window.onscroll = function () {
     console.log(window.screen.availHeight / 100 * 3)
     if (check == false) {
         if (window.scrollY < ((window.screen.availHeight / 100) * 2)) {
-            document.getElementById("hide_on_scroll").style.top = "93vh";
+            document.getElementById("hide_on_scroll").style.top = "initial";
         } else {
             document.getElementById("hide_on_scroll").style.top = "-50px";
         }
     }
     if (check == true) {
         if (window.scrollY < ((window.screen.availHeight / 100) * 1)) {
-            document.getElementById("hide_on_scroll").style.top = "83vh";
+            document.getElementById("hide_on_scroll").style.top = "initial";
         } else {
             document.getElementById("hide_on_scroll").style.top = "-50px";
         }
