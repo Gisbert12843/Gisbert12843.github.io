@@ -24,15 +24,15 @@
   <link rel="stylesheet" href="./css/main.css?version=1.1">
   <script type="text/javascript" src="./script/script.js" async="false"></script>
 
-
+  <script>// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  </script>
+  
 
 </head>
 
-<script>// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-  let vh = window.innerHeight * 0.01;
-  // Then we set the value in the --vh custom property to the root of the document
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-</script>
 
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" wfd-invisible="true">
