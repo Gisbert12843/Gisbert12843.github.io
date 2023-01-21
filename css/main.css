@@ -713,7 +713,7 @@ html {
     display: flex;
     padding-bottom: 3rem;
     min-height: 28rem;
-
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
