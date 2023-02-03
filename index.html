@@ -14,11 +14,11 @@
   <!-- Font Awesome icons -->
   <link rel="stylesheet" href="./source/external/fontawesome-free-6.2.0-web/css/all.min.css">
   <link rel="icon" href="./source/favicon.ico" type="image/png">
-
-  <!-- Animation library styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/aos.css">
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./script/particles.min.js"></script>
 
 
@@ -119,7 +119,7 @@
               class="socials-text">LinkedIn</span> <i class="fab fa-linkedin fa-2x"></i></a></li>
         <li class="bg-dark-grey"> <a href="https://github.com/gisbert12843" target="_blank"><span
               class="socials-text">GitHub</span><i class="fab fa-github fa-2x"></i></a></li>
-        <li class="bg-white"><a class="text-dark-grey" href="mailto:kai.oestreich.12843@gmai.com"><span
+        <li class="bg-white"><a id="toCopyMail" class="text-dark-grey" onclick="copyEmail()"><span
               class="socials-text">Email</span><i class="fas fa-envelope fa-2x"></i></a></li>
       </ul>
     </div>
@@ -148,7 +148,7 @@
           Projects</span></h2>
 
 
-      <div class="project-row aos-init" data-aos="fade-up">
+      <section id="WinXSearch" class="project-row aos-init" data-aos="fade-up">
         <div class="project-left">
           <!-- <img src="./source/WinXSearch.png" alt=""> -->
           <!-- <iframe width="560" height="315"
@@ -178,8 +178,8 @@
               target="_blank"> <i class="fab fa-github"></i> Code</a>
           </div>
         </div>
-      </div>
-      <div class="project-row aos-init" data-aos="fade-up">
+      </section>
+      <section id="SHA256-Suit" class="project-row aos-init" data-aos="fade-up">
         <div class="project-left">
           <video class="demo_video" width="640" height="360" poster="source/SHA256-Suit.png" controls preload="none">
             <source src="source/SHA256-Suit-Demo.mp4" type="video/mp4" />
@@ -197,12 +197,47 @@
           <div class="project-links">
             <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
               target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
-            <a href="https://github.com/Gisbert12843/WinXSearch" class="btn-pink-outline btn-small mx-1"
+            <a href="https://github.com/Gisbert12843/SHA256-Suit" class="btn-pink-outline btn-small mx-1"
+              target="_blank"> <i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-row aos-init" data-aos="fade-up">
+        <div class="project-left">
+
+
+
+          <div class="demo_soon_view">
+            <span>Demo Coming Soon</span>
+          </div>
+
+
+        </div>
+        <div class="project-right">
+          <h3>Embedded Launcher</h3>
+          <ul class="tech-stack-list">
+            <p class="text-grey"><b>Made with: </b></p>
+            <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
+            <img class="made_with_logo" src="./source/PowerShell.svg" alt="">
+            <img class="made_with_logo" src="./source/mariadb_logo.svg" alt="">
+          </ul>
+          <p>An Installer/Launcher for a project in our Software Engineering Module. Uses Fileexistence and UserInput
+            to
+            install and configure dependencies on the target system.
+            E.g. when an MariaDB installation was found the user will be asked to input the credentials of their
+            installation to allow the launcher to import our database.
+          </p>
+          <div class="project-links">
+            <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
+              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
+            <a href="https://github.com/Gisbert12843/Embedded_Installer" class="btn-pink-outline btn-small mx-1"
               target="_blank"> <i class="fab fa-github"></i> Code</a>
           </div>
         </div>
       </div>
 
+      
 
     </div>
   </section>
@@ -337,7 +372,7 @@
           <a href="https://github.com/gisbert12843" target="_blank"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/" target="_blank"><i
               class="fab fa-linkedin fa-2x"></i></a>
-          <a href="mailto:kai.oestreich.12843@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+          <a id="toCopyMail" onclick="copyEmail();"><i class="fas fa-envelope fa-2x"></i></a>
         </div>
       </div>
     </div>

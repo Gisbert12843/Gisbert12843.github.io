@@ -4,7 +4,6 @@ let video_hoverstate = 0;
 window.onresize = function () {
   if (video_hoverstate == 0) {
     location.reload();
-    console.log(video_hoverstate);
   }
 }
 
@@ -24,24 +23,33 @@ var clip_elements = document.getElementsByClassName("projects");
 for (var i = 0; i < clip_elements.length; i++) {
   clip_elements[i].addEventListener("mouseout", function (e) {
     video_hoverstate = 0;
-    console.log(video_hoverstate);
   })
   clip_elements[i].addEventListener("mouseover", function (e) {
     video_hoverstate = 1;
-    console.log(video_hoverstate);
   })
 
 
   clip_elements[i].addEventListener("play", function (e) {
     video_hoverstate = 1;
-    console.log(video_hoverstate);
   })
   clip_elements[i].addEventListener("click", function (e) {
     video_hoverstate = 1;
-    console.log(video_hoverstate);
   })
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -86,3 +94,53 @@ window.onscroll = function () {
     }
   }
 }
+
+
+function copyEmail() {
+
+   // Copy the text inside the text field
+   navigator.clipboard
+      .writeText("kai.oestreich.12843@gmail.com")
+      .then(() => {
+        alert("Copied E-Mail to Clipboard");
+      })
+      .catch(() => {
+        alert("Couldn't Copy E-Mail to Clipboard");
+      });
+}
+
+
+
+// #slider::-webkit-scrollbar {
+//   display: none; /* for Chrome, Safari, and Opera */
+// }
+
+
+// #slider {
+//   /* position: relative; */
+//   scroll-snap-type: x mandatory;
+//   width: 640px;
+//   height: 360px;
+//   /* margin: 30px auto; */
+//   white-space: nowrap;
+//   /* aspect-ratio: 1/1; */
+//   overflow-x: hide;
+//   overflow-y: scroll;
+//   border: solid black 1px;
+//   cursor:grab;
+// }
+// #slider > div {
+//   /* position: relative; */
+//   display: inline-block;
+//   height: 100%;
+//   width: 100%;
+//   /* border-radius: 10%; */
+//   /* aspect-ratio: 1/1; */
+//   /* margin: 5px; */
+//   scroll-snap-align: center;
+// }
+// #slider > div > img {
+//   /* display: inline-block; */
+//   height: 100%;
+//   width: 100%;
+// }

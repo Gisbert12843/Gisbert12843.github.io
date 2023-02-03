@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  visibility: hidden;
+}
 
 * {
   margin: 0;
@@ -716,7 +719,6 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
   }
 
   .projects .project-row .project-left {
@@ -763,10 +765,9 @@ html {
     width: auto;
     max-height: 2.5rem;
   }
-  .made_with_logo:not(:first-of-type)  {
+  .made_with_logo:not(:first-of-type) {
     margin-left: 1rem;
   }
-
 
   .skill_logo {
     width: 90px;
@@ -787,6 +788,22 @@ html {
 
   .projects .project-row #webscraper:hover {
     background-image: url("../img/top10songs.gif");
+  }
+
+  .demo_soon_view {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    height: 360px;
+    position: relative;
+  }
+
+  .demo_soon_view > span {
+    font-size: 3rem;
+    left: 0;
+    
   }
 
   .education {
