@@ -2,413 +2,467 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta http-equiv="Expires" content="3600"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kai Oestreich | Software Engineer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="Expires" content="3600"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Oestreich | Software Engineer</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
 
-  <!-- Font Awesome icons -->
-  <link rel="stylesheet" href="./source/external/fontawesome-free-6.2.0-web/css/all.min.css">
-  <link rel="icon" href="./source/favicon.ico" type="image/png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/aos.css">
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./script/particles.min.js"></script>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="./source/external/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="icon" href="./source/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css">
 
 
-  <link rel="stylesheet" href="./css/main.css?version=1.1">
-  <script type="text/javascript" src="./script/script.js" async="false"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/particles.min.js"></script>
 
-  <script>// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    let vh = window.innerHeight * 0.01;
-    // Then we set the value in the --vh custom property to the root of the document
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  </script>
+
+    <link rel="stylesheet" href="./css/main.css?version=1.1">
+    <script type="text/javascript" src="./script/script.js" async="false"></script>
+
+    <script>// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    </script>
 </head>
 
 
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" wfd-invisible="true">
-  <!-- HEADER -->
-  <header id="header">
-    <div id="particles-js">
-      <nav id="nav" data-aos="fade-in" class="aos-init aos-animate">
-        <div class="container nav-container">
-          <a href="./index.html" id="logo">
-            <img src="./source/logo.svg" alt="logo" class="my_logo">
-          </a>
-          <ul class="hide-for-mobile nav-links flex">
-            <li>
-              <a href="./#projects" class="link"><i class="fas fa-code"></i> Projects</a>
-            </li>
-            <li>
-              <a href="./#skills" class="link"><i class="fas fa-tools"></i> Skills</a>
-            </li>
-            <li>
-              <a href="./#education" class="link"><i class="fas fa-user-graduate"></i> Education</a>
-            </li>
+    <!-- HEADER -->
+    <header id="header">
+        <div id="particles-js">
+            <nav id="nav" data-aos="fade-in" class="aos-init aos-animate">
+                <div class="container nav-container">
+                    <a href="./index.html" id="logo">
+                        <img src="./source/logo.svg" alt="logo" class="my_logo">
+                    </a>
+                    <ul class="hide-for-mobile nav-links flex">
+                        <li>
+                            <a href="./#projects" class="link"><i class="fas fa-code"></i> Projects</a>
+                        </li>
+                        <li>
+                            <a href="./#skills" class="link"><i class="fas fa-tools"></i> Skills</a>
+                        </li>
+                        <li>
+                            <a href="./#education" class="link"><i class="fas fa-user-graduate"></i> Education</a>
+                        </li>
 
-            <li>
-              <a href="./#contact" class="link"><i class="fas fa-envelope"></i> Contact</a>
-            </li>
-          </ul>
+                        <li>
+                            <a href="./#contact" class="link"><i class="fas fa-envelope"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container mobile-menu hide-for-desktop" wfd-invisible="true">
+                    <div class="container">
+                        <div class="mobile-menu-links">
+                            <ul class="flex">
+                                <li>
+                                    <a href="./#projects" class="link pink-hover">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="./#skills" class="link pink-hover">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="./#education" class="link pink-hover">Education</a>
+                                </li>
+                                <li>
+                                    <a href="./#contact" class="link pink-hover">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav><canvas class="particles-js-canvas-el" width="1429" height="704"
+                style="width: 100%; height: 100%;"></canvas>
         </div>
 
-        <div class="container mobile-menu hide-for-desktop" wfd-invisible="true">
-          <div class="container">
-            <div class="mobile-menu-links">
-              <ul class="flex">
-                <li>
-                  <a href="./#projects" class="link pink-hover">Projects</a>
-                </li>
-                <li>
-                  <a href="./#skills" class="link pink-hover">Skills</a>
-                </li>
-                <li>
-                  <a href="./#education" class="link pink-hover">Education</a>
-                </li>
-                <li>
-                  <a href="./#contact" class="link pink-hover">Contact</a>
-                </li>
-              </ul>
+
+
+
+        <!-- HERO -->
+
+
+
+        <div class="hero">
+            <div data-aos="fade-up" class="aos-init aos-animate">
+                <div class="Hi_Im">
+
+                    <h1 class="neon" data-text="U"><span class="flicker-veryslow">Hi,</span><span class="flicker-slow">
+                            I'</span>m
+                        K<span class="flicker-medium">a</span><span class="flicker-fast">i</span></h1>
+
+                </div>
+                <p class="student" id="student">
+                    I'm currently studying Computer Science at the<a href="https://www.fh-aachen.de/"
+                        class="pink-link-underline" target="_blank"> FH Aachen.</a><br>
+                </p>
+                <div class="hero-btns">
+                    <a href="./#projects" class="btn-pink"><i class="fas fa-code"></i> Projects</a>
+                    <a href="https://github.com/gisbert12843" class="btn-pink-outline mx-1" id="projects-btn"
+                        target="_blank"><i class="fab fa-github"></i> Github</a>
+                </div>
             </div>
-          </div>
-
         </div>
-      </nav><canvas class="particles-js-canvas-el" width="1429" height="704"
-        style="width: 100%; height: 100%;"></canvas>
-    </div>
 
-
-
-
-    <!-- HERO -->
-
-
-
-    <div class="hero">
-      <div data-aos="fade-up" class="aos-init aos-animate">
-        <div class="Hi_Im">
-
-          <h1 class="neon" data-text="U"><span class="flicker-veryslow">Hi,</span><span class="flicker-slow"> I'</span>m
-            K<span class="flicker-medium">a</span><span class="flicker-fast">i</span></h1>
-
-        </div>
-        <p class="student" id="student">
-          I'm currently studying Computer Science at the<a href="https://www.fh-aachen.de/" class="pink-link-underline"
-            target="_blank"> FH Aachen.</a><br>
-        </p>
-        <div class="hero-btns">
-          <a href="./#projects" class="btn-pink"><i class="fas fa-code"></i> Projects</a>
-          <a href="https://github.com/gisbert12843" class="btn-pink-outline mx-1" id="projects-btn" target="_blank"><i
-              class="fab fa-github"></i> Github</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SOCIAL LINKS -->
-    <div class="socials aos-init aos-animate" data-aos="fade-in">
-      <ul>
-        <li class="bg-linkedin"><a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/" target="_blank"><span
-              class="socials-text">LinkedIn</span> <i class="fab fa-linkedin fa-2x"></i></a></li>
-        <li class="bg-dark-grey"> <a href="https://github.com/gisbert12843" target="_blank"><span
-              class="socials-text">GitHub</span><i class="fab fa-github fa-2x"></i></a></li>
-        <li class="bg-white"><a id="toCopyMail" class="text-dark-grey" onclick="copyEmail()"><span
-              class="socials-text">Email</span><i class="fas fa-envelope fa-2x"></i></a></li>
-      </ul>
-    </div>
-
-    <div class="seperator-skew">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
-        <polygon class="fill-white" points="2560 0   2560 100 0 100"></polygon>
-      </svg>
-    </div>
-
-  </header>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <div class="container projects_container">
-
-      <div id="hide_on_scroll" class="arrow-container">
-        <div class="arrow bounce">
-          <i class="fa fa-angle-down fa-2x"></i>
-        </div>
-      </div>
-
-
-      <h2 class="main-font category_font project_font">My<span class="text-pink main-font category_font">
-          Projects</span></h2>
-
-
-      <section id="WinXSearch" class="project-row aos-init" data-aos="fade-up">
-        <div class="project-left">
-          <!-- <img src="./source/WinXSearch.png" alt=""> -->
-          <!-- <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/cgHTfR3tKes?showinfo=0&controls=0&autohide=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe> -->
-          <video class="demo_video" width="640" height="360" poster="source/WinXSearch2.png" controls preload="none">
-            <source src="source/WinXSearch-Demo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="project-right">
-          <h3>WinXSearch</h3>
-          <ul class="tech-stack-list">
-            <p class="text-grey"><b>Made with: </b></p>
-            <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
-          </ul>
-          <p>A multithreaded approach to a filecontent-search run via the context-menu. Users can open the software by
-            right-clicking inside any folder. After providing any number of keywords, the software recursively searches
-            through every file/folder and its content for matches with the keywords. Once done, the user then has the
-            option to choose any number of found files/folders to be opened in an explorer window.
-          </p>
-          <div class="project-links">
-            <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
-              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
-            <a href="https://github.com/Gisbert12843/WinXSearch" class="btn-pink-outline btn-small mx-1"
-              target="_blank"> <i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
-      </section>
-      <section id="SHA256-Suit" class="project-row aos-init" data-aos="fade-up">
-        <div class="project-left">
-          <video class="demo_video" width="640" height="360" poster="source/SHA256-Suit.png" controls preload="none">
-            <source src="source/SHA256-Suit-Demo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="project-right">
-          <h3>SHA256-Suit</h3>
-          <ul class="tech-stack-list">
-            <p class="text-grey"><b>Made with: </b></p>
-            <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
-            <img class="made_with_logo" src="./source/OpenSSL_logo.svg" alt="">
-          </ul>
-          <p>A drag&drop application, able to hash, or validate with a given hash, one or multiple files.
-          </p>
-          <div class="project-links">
-            <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
-              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
-            <a href="https://github.com/Gisbert12843/SHA256-Suit" class="btn-pink-outline btn-small mx-1"
-              target="_blank"> <i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
-      </section>
-
-      <div class="project-row aos-init" data-aos="fade-up">
-        <div class="project-left">
-
-
-
-          <div class="demo_soon_view">
-            <span>Demo Coming Soon</span>
-          </div>
-
-
-        </div>
-        <div class="project-right">
-          <h3>Embedded Launcher</h3>
-          <ul class="tech-stack-list">
-            <p class="text-grey"><b>Made with: </b></p>
-            <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
-            <img class="made_with_logo" src="./source/PowerShell.svg" alt="">
-            <img class="made_with_logo" src="./source/mariadb_logo.svg" alt="">
-          </ul>
-          <p>An Installer/Launcher for a project in our Software Engineering Module. Uses Fileexistence and UserInput
-            to
-            install and configure dependencies on the target system.
-            E.g. when an MariaDB installation was found the user will be asked to input the credentials of their
-            installation to allow the launcher to import our database.
-          </p>
-          <div class="project-links">
-            <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
-              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
-            <a href="https://github.com/Gisbert12843/Embedded_Installer" class="btn-pink-outline btn-small mx-1"
-              target="_blank"> <i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
-      </div>
-
-      
-
-    </div>
-  </section>
-
-
-
-  <!-- SKILLS -->
-  <section id="skills" class="skills">
-
-
-    <div class="container aos-init skill_area" data-aos="fade-in">
-      <h2 class="text-white main-font category_font">My <span class="text-pink main-font category_font">Skills</span>
-      </h2>
-      <ul class="skills-icons">
-
-        <li>
-          <img class="skill_logo" src="./source/microsoft-windows-22.svg" alt="">
-          <span>Windows 10</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/c_plus_plus.svg" alt="">
-          <span>C++</span>
-        </li>
-
-
-        <li>
-          <img class="skill_logo" src="./source/PHP-logo.svg" alt="">
-          <span>PHP</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/html-1.svg" alt="">
-          <span>HTML</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/css-3.svg" alt="">
-          <span>CSS</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/logo-javascript.svg" alt="">
-          <span>JS</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/mariadb_logo.svg" alt="">
-          <span>MariaDB</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/Laravel.svg" alt="">
-          <span>Laravel Blade</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/python-5.svg" alt="">
-          <span>Python</span>
-        </li>
-
-        <li>
-          <img class="skill_logo" src="./source/linux-tux.svg" alt="">
-          <span>Linux</span>
-        </li>
-
-
-
-
-      </ul>
-    </div>
-
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="education">
-    <div class="container education_container">
-      <h2 class="main-font aos-init category_font" data-aos="fade-in">My <span
-          class="text-pink main-font category_font">Education</span></h2>
-
-      <div class="education-card aos-init" data-aos="zoom-in">
-        <div class="education-card-column">
-          <div class="card-column-image">
-            <img src="./source/fh-logo.png" alt="">
-          </div>
-
-          <div class="card-column-large">
-            <h4 class="education-year">2019 - now</h4>
-            <h4>FH Aachen - Bachelor of Science Informatik (Computer Science)</h4>
-            <p></p>
+        <!-- SOCIAL LINKS -->
+        <div class="socials aos-init aos-animate" data-aos="fade-in">
             <ul>
-              <li>B.Sc. IT(Computer Science)</li>
+                <li class="bg-linkedin"><a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/"
+                        target="_blank"><span class="socials-text">LinkedIn</span> <i
+                            class="fab fa-linkedin fa-2x"></i></a></li>
+                <li class="bg-dark-grey"> <a href="https://github.com/gisbert12843" target="_blank"><span
+                            class="socials-text">GitHub</span><i class="fab fa-github fa-2x"></i></a></li>
+                <li class="bg-white"><a id="toCopyMail" class="text-dark-grey" onclick="copyEmail()"><span
+                            class="socials-text">Email</span><i class="fas fa-envelope fa-2x"></i></a></li>
             </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div class="container contact_me_container">
-      <h2 class="section-title main-font aos-init category_font" data-aos="fade-in">Contact <span
-          class="text-pink main-font category_font">Me</span></h2>
-      <div class="card-container">
-        <div class="card aos-init" data-aos="fade-in">
-          <i class="fas fa-envelope"></i>
-          <h3>Email</h3>
-          <p>kai.oestreich.12843@gmail.com</p>
+        <div class="seperator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0   2560 100 0 100"></polygon>
+            </svg>
         </div>
-        <div class="card aos-init" data-aos="fade-in" data-aos-delay="100">
-          <i class="fab fa-github"></i>
-          <h3>GitHub</h3>
-          <a href="https://github.com/gisbert12843" class="text-pink" target="_blank">Gisbert12843</a>
+
+    </header>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <div class="container projects_container">
+
+            <div id="hide_on_scroll" class="arrow-container">
+                <div class="arrow bounce">
+                    <i class="fa fa-angle-down fa-2x"></i>
+                </div>
+            </div>
+
+
+            <h2 class="main-font category_font project_font">My<span class="text-pink main-font category_font">
+                    Projects</span></h2>
+
+<!-- Smart Home Station -->
+            <section id="Smart Home Station" class="project-row aos-init" data-aos="fade-up">
+                <div class="project-left">
+                    <div class="preview_content">
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="source/smart_home1.jpg" alt="Slide 1"></div>
+                                <div class="swiper-slide"><img src="source/smart_home2.jpg" alt="Slide 2"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h3>Smart Home Station</h3>
+                    <ul class="tech-stack-list">
+                        <p class="text-grey"><b>Made with: </b></p>
+                        <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
+                        <img class="made_with_logo" src="./source/espressif.png" alt="">
+                        <img class="made_with_logo" src="./source/lvgl.png" alt="">
+                        <img class="made_with_logo" src="./source/download.png" alt="">
+
+                    </ul>
+                    <pre>
+An Embedded MQTT Broker for the ESP32 Platform
+This project implements a lightweight and efficient MQTT broker tailored for the ESP32, featuring:
+
+DPP (Device Provisioning Protocol) for seamless WiFi setup.
+Persitent storage of Wifi_Credentials.
+A responsive touch-enabled user interface, allowing intuitive interaction.
+Automatic topic registration and visualization, enabling direct control of topic states via touch.
+Real-time UI feedback for WiFi connection status.
+                      </pre>
+                    </p>
+                    <div class="project-links">
+                        <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
+              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
+                        <a href="https://github.com/Gisbert12843/Smart_Home_Station" class="btn-pink-outline btn-small mx-1"
+                            target="_blank"> <i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </section>
+
+
+<!-- WinXSearch -->
+            <section id="WinXSearch" class="project-row aos-init" data-aos="fade-up">
+                <div class="project-left">
+                    <div class="preview_content">
+
+                        <video class="demo_video" width="640" height="360" poster="source/WinXSearch2.png" controls
+                            preload="none">
+                            <source src="source/WinXSearch-Demo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h3>WinXSearch</h3>
+                    <ul class="tech-stack-list">
+                        <p class="text-grey"><b>Made with: </b></p>
+                        <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
+                    </ul>
+                    <p>A multithreaded approach to a filecontent-search run via the context-menu. Users can open the
+                        software by
+                        right-clicking inside any folder. After providing any number of keywords, the software
+                        recursively searches
+                        through every file/folder and its content for matches with the keywords. Once done, the user
+                        then has the
+                        option to choose any number of found files/folders to be opened in an explorer window.
+                    </p>
+                    <div class="project-links">
+                        <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
+              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
+                        <a href="https://github.com/Gisbert12843/WinXSearch" class="btn-pink-outline btn-small mx-1"
+                            target="_blank"> <i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </section>
+            <section id="SHA256-Suit" class="project-row aos-init" data-aos="fade-up">
+                <div class="project-left">
+                    <div class="preview_content">
+                        <video class="demo_video" width="640" height="360" poster="source/SHA256-Suit.png" controls
+                            preload="none">
+                            <source src="source/SHA256-Suit-Demo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h3>SHA256-Suit</h3>
+                    <ul class="tech-stack-list">
+                        <p class="text-grey"><b>Made with: </b></p>
+                        <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
+                        <img class="made_with_logo" src="./source/OpenSSL_logo.svg" alt="">
+                    </ul>
+                    <p>A drag&drop application, able to hash, or validate with a given hash, one or multiple files.
+                    </p>
+                    <div class="project-links">
+                        <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
+              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
+                        <a href="https://github.com/Gisbert12843/SHA256-Suit" class="btn-pink-outline btn-small mx-1"
+                            target="_blank"> <i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="project-row aos-init" data-aos="fade-up">
+                <div class="project-left">
+
+
+
+                    <div class="demo_soon_view">
+                        <span>Demo Coming Soon</span>
+                    </div>
+
+
+                </div>
+                <div class="project-right">
+                    <h3>Embedded Launcher</h3>
+                    <ul class="tech-stack-list">
+                        <p class="text-grey"><b>Made with: </b></p>
+                        <img class="made_with_logo" src="./source/c_plus_plus.svg" alt="">
+                        <img class="made_with_logo" src="./source/PowerShell.svg" alt="">
+                        <img class="made_with_logo" src="./source/mariadb_logo.svg" alt="">
+                    </ul>
+                    <p>An Installer/Launcher for a project in our Software Engineering Module. Uses Fileexistence and
+                        UserInput
+                        to
+                        install and configure dependencies on the target system.
+                        E.g. when an MariaDB installation was found the user will be asked to input the credentials of
+                        their
+                        installation to allow the launcher to import our database.
+                    </p>
+                    <div class="project-links">
+                        <!--          <a href="https://www.youtube.com/watch?v" class="btn-pink btn-small hover-bg-light"
+              target="_blank"> <i class="fab fa-youtube"></i> Demo</a> -->
+                        <a href="https://github.com/Gisbert12843/Embedded_Installer"
+                            class="btn-pink-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i>
+                            Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
-        <div class="card aos-init" data-aos="fade-in" data-aos-delay="200">
-          <i class="fab fa-linkedin"></i>
-          <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/" class="text-pink" target="_blank">Kai
-            Oestreich</a>
+    </section>
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+
+
+        <div class="container aos-init skill_area" data-aos="fade-in">
+            <h2 class="text-white main-font category_font">My <span
+                    class="text-pink main-font category_font">Skills</span>
+            </h2>
+            <ul class="skills-icons">
+
+                <li>
+                    <img class="skill_logo" src="./source/microsoft-windows-22.svg" alt="">
+                    <span>Windows 10</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo" src="./source/linux-tux.svg" alt="">
+                    <span>Linux</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo" src="./source/c_plus_plus.svg" alt="">
+                    <span>C++</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo" src="./source/python-5.svg" alt="">
+                    <span>Python</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo skill_logo_transparent" src="./source/rust.png" alt="">
+                    <span>Rust</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo" src="./source/Espressif.png" alt="">
+                    <span>ESP-IDF</span>
+                </li>
+                
+                <li>
+                    <img class="skill_logo" src="./source/mqtt-logo-ver.jpg" alt="">
+                    <span>MQTT</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo" src="./source/lvgl.png" alt="">
+                    <span>LVGL</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo skill_logo_transparent" src="./source/Ros_logo.svg" alt="">
+                    <span>ROS2</span>
+                </li>
+
+                <li>
+                    <img class="skill_logo" src="./source/zigbee.svg" alt="">
+                    <span>ZigBee</span>
+                </li>
+
+
+
+
+
+            </ul>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="footer_container">
-      <div class="footer-flex">
-        <img src="./source/logo.svg" alt="logo" id="logo-footer" class="my_logo footer_logo">
+    </section>
 
-        <div class="footer-icon-links">
-          <a href="https://github.com/gisbert12843" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/" target="_blank"><i
-              class="fab fa-linkedin fa-2x"></i></a>
-          <a id="toCopyMail" onclick="copyEmail();"><i class="fas fa-envelope fa-2x"></i></a>
+    <!-- Education -->
+    <section id="education" class="education">
+        <div class="container education_container">
+            <h2 class="main-font aos-init category_font" data-aos="fade-in">My <span
+                    class="text-pink main-font category_font">Education</span></h2>
+
+            <div class="education-card aos-init" data-aos="zoom-in">
+                <div class="education-card-column">
+                    <div class="card-column-image">
+                        <img src="./source/fh-logo.png" alt="">
+                    </div>
+
+                    <div class="card-column-large">
+                        <h4 class="education-year">2019 - now</h4>
+                        <h4>FH Aachen - Bachelor of Science Informatik (Computer Science)</h4>
+                        <p></p>
+                        <ul>
+                            <li>B.Sc. IT(Computer Science)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container contact_me_container">
+            <h2 class="section-title main-font aos-init category_font" data-aos="fade-in">Contact <span
+                    class="text-pink main-font category_font">Me</span></h2>
+            <div class="card-container">
+                <div class="card aos-init" data-aos="fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>kai.oestreich.12843@gmail.com</p>
+                </div>
+                <div class="card aos-init" data-aos="fade-in" data-aos-delay="100">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/gisbert12843" class="text-pink" target="_blank">Gisbert12843</a>
+                </div>
+                <div class="card aos-init" data-aos="fade-in" data-aos-delay="200">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/" class="text-pink" target="_blank">Kai
+                        Oestreich</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer-flex">
+                <img src="./source/logo.svg" alt="logo" id="logo-footer" class="my_logo footer_logo">
+
+                <div class="footer-icon-links">
+                    <a href="https://github.com/gisbert12843" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/kai-oestreich-1860b71b0/" target="_blank"><i
+                            class="fab fa-linkedin fa-2x"></i></a>
+                    <a id="toCopyMail" onclick="copyEmail();"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-  <script wfd-invisible="true">
-    window.mobileCheck = function ()
-    {
-      let check = false;
-      (function (a)
-      {
-        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
-      })(navigator.userAgent || navigator.vendor || window.opera);
-      return check;
-    };
+    <script wfd-invisible="true">
+        window.mobileCheck = function () {
+            let check = false;
+            (function (a) {
+                if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+            })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
 
-    var check = false;
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-    {
-      check = true
-    }
-    if (check == false)
-    {
-      particlesJS.load('particles-js', './source/external/particles.json', function ()
-      {
-        console.log("particles.json loaded...")
-      })
-    }
-  </script>
+        var check = false;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            check = true
+        }
+        if (check == false) {
+            particlesJS.load('particles-js', './source/external/particles.json', function () {
+                console.log("particles.json loaded...")
+            })
+        }
+    </script>
 
-  <!-- AOS Animations -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" wfd-invisible="true"></script>
-  <script wfd-invisible="true">
-    AOS.init();
-  </script>
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" wfd-invisible="true"></script>
+    <script wfd-invisible="true">
+        AOS.init();
+    </script>
 
 
 
